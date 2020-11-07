@@ -36,7 +36,6 @@
 <?php
     if(isset($_POST['email']) && isset($_POST['password'])) {
         if (match_found_in_database($_POST['email'], $_POST['password'])) {
-            session_start();
             $_SESSION['loggedin'] = true;
             // $_SESSION['username'] = $username; $username coming from the database
             // something like this is optional, of course

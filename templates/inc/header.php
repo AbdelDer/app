@@ -3,7 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <link rel="stylesheet" href="./app/css/login.css">
+  <!-- <script type="text/javascript" src="./app/js/handletaps.js"></script> -->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
@@ -63,14 +65,19 @@
             username
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <form class="form-inline" action="">
-              <input class="dropdown-item" type="submit" value="Logout"/>
+            <form class="form-inline" method = "post" action="">
+              <input type="text" name = "logout" hidden />
+              <input class="dropdown-item" value="logout" type="submit"/>
             </form>
           </div>
         </li>
       </ul>
     </div>
   </nav>
-<?php
-  session_destroy();
-?>
+
+  <?php
+  if(isset($_POST['logout'])) {
+    session_destroy();
+    header("Location: /app");
+  }
+  ?>
