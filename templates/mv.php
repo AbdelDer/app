@@ -1,5 +1,6 @@
 <?php include 'inc/header.php'; ?>
 <h1 class="text-center mt-2"> <?php echo $title ?> </h1>
+<p class="d-flex justify-content-center mt-10" id="statekub">état kubernetes</p>
 <div class="d-flex justify-content-center w-100">
     <image src="assets/kubernetes.png" />
 </div>
@@ -16,6 +17,7 @@
     </div>
 </div>
 
+<p class="d-flex justify-content-center mt-10" id="statedock">état docker</p>
 <div class="d-flex justify-content-center w-100 mt-2">
     <image class="w-25" src="assets/docker.png" />
 </div>
@@ -32,6 +34,6 @@
     </div>
 </div>
 <div class="d-flex justify-content-center w-100 mt-2">
-    <?php echo '<button class="w-25 btn btn-success" onclick="send(\''.$title.'\')">Send</button>'?>
-</div>  
+    <?php echo '<button class="w-25 btn btn-success" onclick="send(\'' . $title . '\')">Send</button>' ?>
+</div>
 <?php include 'inc/footer.php'; ?>

@@ -1,14 +1,26 @@
 function hideTextArea(param) {
     switch (param) {
-        case 'docker': document.getElementById("descriptiondock").className = "d-none"; break;
-        case 'kubernetes': document.getElementById("descriptionkub").className = "d-none"; break;
+        case 'docker':
+            document.getElementById("descriptiondock").className = "d-none";
+            document.getElementById("statedock").className = "d-flex justify-content-center mt-10 text-success";
+            break;
+        case 'kubernetes':
+            document.getElementById("descriptionkub").className = "d-none";
+            document.getElementById("statekub").className = "d-flex justify-content-center mt-10 text-success";
+            break;
         default: break;
     }
 }
 function showTextArea(param) {
     switch (param) {
-        case 'docker': document.getElementById("descriptiondock").className = "d-block"; break;
-        case 'kubernetes': document.getElementById("descriptionkub").className = "d-block"; break;
+        case 'docker':
+            document.getElementById("descriptiondock").className = "d-block";
+            document.getElementById("statedock").className = "d-flex justify-content-center mt-10 text-danger";
+            break;
+        case 'kubernetes':
+            document.getElementById("descriptionkub").className = "d-block";
+            document.getElementById("statekub").className = "d-flex justify-content-center mt-10 text-danger";
+            break;
         default: break;
     }
 }
