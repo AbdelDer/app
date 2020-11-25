@@ -11,7 +11,7 @@
             <button class="w-25 btn btn-success mr-2" onclick="hideTextArea('kubernetes')">good</button>
             <button class="w-25 btn btn-danger ml-2" onclick="showTextArea('kubernetes')">bad</button>
         </div>
-        <div class="d-flex justify-content-center mt-2">
+        <div class="summer-kub d-flex justify-content-center mt-2">
             <textarea id="descriptionkub" class="d-none" name="descriptionkub" rows="5" cols="33"></textarea>
         </div>
     </div>
@@ -28,7 +28,7 @@
             <button class="w-25 btn btn-success mr-2" onclick="hideTextArea('docker')">good</button>
             <button class="w-25 btn btn-danger ml-2" onclick="showTextArea('docker')">bad</button>
         </div>
-        <div class="d-flex justify-content-center mt-2">
+        <div class="summer-dock d-flex justify-content-center mt-2">
             <textarea id="descriptiondock" class="d-none" name="descriptiondock" rows="5" cols="33"></textarea>
         </div>
     </div>

@@ -1,4 +1,3 @@
-
 <footer class="page-footer font-small">
 
   <div class="footer-copyright text-muted text-center py-3">
